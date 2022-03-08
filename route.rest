@@ -1,0 +1,84 @@
+GET http://localhost:3400/products
+
+
+
+###
+
+
+GET http://localhost:3300/products/621dc7f971c20aee2b47cb66
+
+
+###
+
+
+POST http://localhost:3400/products 
+Content-Type: application/json
+
+{
+    "title": "Acer Nitro 5 i7 16GB RAM 256GB SSD+1TB HDD GTX1650 15 144Hz Laptop",
+    "price": 19999,
+    "category": "Laptop",
+    "img": "https://i.postimg.cc/1ttVqpKf/acer-nitro-5an515-55-front-red-backlit-f8c0.jpg",
+    "description": "fnksfsfs"
+}
+
+
+
+###
+
+
+DELETE http://localhost:3400/products/62274110ccb19ccc76087a3c
+###
+
+
+
+PATCH http://localhost:3100/products
+Content-Type: application/json
+
+{
+    
+}
+
+
+###
+
+
+
+GET http://localhost:3400/users
+
+###
+POST http://localhost:3300/users/signin
+Content-Type:application/json
+
+{
+"fullname": "Kyle Mc Briden",
+    "password": "123456hani2209"
+}
+
+###
+POST http://localhost:3300/users/signup
+Content-Type: application/json
+
+{   
+    "fullname": "Kyle Mc Briden",
+    "password": "123456hani2209",
+    "email": "happydayzz@gmail.com",
+    "phone_number":"02133589303"
+    
+}
+
+###
+
+GET http://localhost:3300/cart
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMWYzYTY2YmUwMWZjYzNjNTU1ZDQ0MSIsImlhdCI6MTY0NjIxMzc2MCwiZXhwIjoxNjQ2MzAwMTYwfQ.1INNIpyb0l6RSHZTZGx3dP0feZQiTOYQDkLHpXJ-nnE
+
+
+###
+
+DELETE http://localhost:3300/cart/621dcb4971c20aee2b47cb6b
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMWYzYTY2YmUwMWZjYzNjNTU1ZDQ0MSIsImlhdCI6MTY0NjIxMzc2MCwiZXhwIjoxNjQ2MzAwMTYwfQ.1INNIpyb0l6RSHZTZGx3dP0feZQiTOYQDkLHpXJ-nnE
+
+###
+
+POST http://localhost:3300/cart/621dcb4971c20aee2b47cb6b
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMWYzYTY2YmUwMWZjYzNjNTU1ZDQ0MSIsImlhdCI6MTY0NjIxMzc2MCwiZXhwIjoxNjQ2MzAwMTYwfQ.1INNIpyb0l6RSHZTZGx3dP0feZQiTOYQDkLHpXJ-nnE
